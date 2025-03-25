@@ -9,15 +9,16 @@ body {
 
 .container {
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  align-items: flex-start;
   gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .left {
   flex: 1;
-  max-width: 180px;
+  max-width: 220px;
 }
 
 .left img {
@@ -37,7 +38,10 @@ body {
   margin-bottom: 6px;
   color: #444;
   text-decoration: none;
-  font-size: 14px;
+}
+
+.contact-info a:hover {
+  color: #0077cc;
 }
 
 .contact-info i {
@@ -45,12 +49,9 @@ body {
   color: #444;
 }
 
-.contact-info a:hover {
-  color: #0077cc;
-}
-
 .right {
   flex: 2;
+  min-width: 0; /* prevents overflow on small screens */
 }
 
 h1 {
@@ -76,6 +77,25 @@ a:hover {
 p {
   margin-bottom: 16px;
 }
+
+ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    max-width: 100%;
+  }
+
+  .left {
+    margin-bottom: 30px;
+  }
+}
+
 
 html {
   scroll-behavior: smooth;
