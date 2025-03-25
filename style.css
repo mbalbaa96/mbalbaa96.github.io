@@ -76,3 +76,7 @@ a:hover {
 p {
   margin-bottom: 16px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
