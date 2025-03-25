@@ -1,9 +1,3 @@
-/* Reset spacing */
-body, h1, h2, p {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: Georgia, serif;
   font-size: 16px;
@@ -18,19 +12,40 @@ body {
   max-width: 900px;
   margin: 0 auto;
   align-items: flex-start;
-  gap: 40px; /* Adds spacing between image and text */
+  gap: 40px;
 }
 
 .left {
   flex: 1;
   max-width: 180px;
-  margin-right: 40px;
 }
 
 .left img {
   width: 100%;
   border-radius: 4px;
   object-fit: cover;
+}
+
+.contact-info {
+  font-size: 14px;
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: #444;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #0077cc;
+}
+
+.contact-info i {
+  margin-right: 6px;
+  color: #444;
 }
 
 .right {
@@ -60,11 +75,3 @@ a:hover {
 p {
   margin-bottom: 16px;
 }
-
-.contact-info {
-  font-size: 14px;
-  margin-top: 12px;
-  line-height: 1.6;
-}
-
-
