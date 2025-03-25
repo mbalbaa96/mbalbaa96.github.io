@@ -18,6 +18,7 @@ body {
   max-width: 900px;
   margin: 0 auto;
   align-items: flex-start;
+  gap: 40px; /* Adds spacing between image and text */
 }
 
 .left {
